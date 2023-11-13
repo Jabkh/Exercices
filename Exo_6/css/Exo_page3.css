@@ -1,0 +1,9 @@
+.submit input{
+    padding: 10px;
+    color: rgb(83, 58, 225);
+    background-color: #e6d6fc;
+    font-size: 0.625rem;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+}

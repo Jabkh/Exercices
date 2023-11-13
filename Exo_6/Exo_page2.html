@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+    <link rel="stylesheet" href="./css/Exo_page.css">
+    <link rel="stylesheet" href="./css/Exo_page2.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>Mes horaires de diffusion</h1>
+            <h2>Accueil</h2>
+            <ul class="nav">
+                <li><a href="Exo_page.html">Accueil</a></li>
+                <li><a href="Exo_page2.html">Horaires</a></li>
+                <li><a href="Exo_page3.html">Contact</a></li>
+            </ul>
+            <div class="container">
+                <table border="3px" width="300px">
+                    <!-- <caption>El famoso tableau</caption> -->
+                    <thead>
+                        <tr>
+                            <th colspan="9">Header 1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="jour">
+                            <td class="col1"></td>
+                            <td>Lundi</td>
+                            <td>Mardi</td>
+                            <td>Mercredi</td>
+                            <td>Jeudi</td>
+                            <td>Vendredi</td>
+                            <td>Samedi</td>
+                            <td>Dimanche</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Semaine 1-2</td>
+                            <td colspan="2">14h-18h</td>
+                            <td>18h-21h</td>
+                            <td colspan="2" rowspan="2"> 18h-21h</td>
+                            <td colspan="2" rowspan="2">Repos</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Semaine 3-4</td>
+                            <td colspan="2">14h-16h</td>
+                            <td>16h-22h</td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <button><a href="Exo_page.html">Retour</a></button>
+            </div>
+    
+        </div>
+    </main>
+    
+</body>
+
+</html>

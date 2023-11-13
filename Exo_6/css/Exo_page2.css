@@ -1,0 +1,17 @@
+table thead,.col1{ 
+    border:1px;
+    width: 300px;
+    text-align:center;
+    background-color: aquamarine;
+}
+
+tbody{
+    text-align: center;
+    background-color: beige;
+}
+
+.jour{
+    text-align: center;
+    font-weight: bold;
+    padding: auto;
+}
