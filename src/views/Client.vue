@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Informations du Client</h2>
-    <!-- ... Vos champs pour les informations du client ... -->
+
   </div>
 </template>
 
