@@ -1,44 +1,3 @@
-<!-- <script setup>
-import { ref } from 'vue';
-import { useAuthStore } from '../stores/authStore';
-import { useRouter } from 'vue-router';
-
-const authStore = useAuthStore();
-const router = useRouter();
-const username = ref('');
-const password = ref('');
-
-
-// const {user,updateUser} = inject("user");
-
-const onLogin = async () => {
-  await authStore.login({ username: username.value, password: password.value });
-  
-  if (authStore.isLoggedIn) {
-    router.push('/characters');
-  }
-};
-</script>
-
-<template>
-  <div class="container">
-    <div class="card-login">
-        <h1>Connexion</h1>
-        <form @submit.prevent="onLogin" class="login-form">
-        <div class="card-email">
-            <label for="username">Email : </label>
-            <input v-model="username" type="text" id="username" required/>
-        </div>
-        <div class="card-password">
-            <label for="password">Mot de passe : </label>
-            <input v-model="password" type="password" id="password" required/>
-        </div>
-        <button type="submit" class="button-card" @click="onLogin">Se connecter</button>
-        </form>
-     </div>
-  </div>
-</template> -->
-
 <template>
     <div class="container">
       <div class="card-login">
@@ -204,7 +163,5 @@ input:focus {
   -webkit-box-shadow: 1px 1px 4px #777777;
   -moz-box-shadow: 1px 1px 4px #777777;
 }
-
-
 
 </style>
