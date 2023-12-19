@@ -1,98 +1,7 @@
-// import { ref, computed } from "vue";
-// import { defineStore } from "pinia";
-
-// export const useAuthStore = defineStore("auth", () => {
-//     const user = ref(null);
-  
-//     const loadUser= () => {
-//       const saveUser = localStorage.getItem("user");
-//       if (saveUser) {
-//         user.value = JSON.parse(saveUser);
-//       }
-//     };
-  
-//     const saveUser = () => {
-//       if (user.value) {
-//         localStorage.setItem("user", JSON.stringify(user.value));
-//       }
-//     };
-  
-//     loadUser();
-  
-//     const isLoggedIn = computed(() => !!user.value);
-  
-//     const login = ({ username, password }) => {
-//       user.value = { username, password };
-//       saveUser();
-//     };
-  
-//     const register = ({ username, password }) => {
-     
-//       login({ username, password });
-//     };
-  
-//     const logout = () => {
-//       user.value = null;
-//       localStorage.removeItem("user");
-//     };
-
-//    const requireAuth = (to, from, next) => {
-//       const auth = useAuthStore();
-    
-//       if (auth.isAuthenticated) {
-//         next()
-//       } else {
-//         next('/login')
-//       }
-
-//     }
-  
-//     return { user, isLoggedIn, login, register, logout , requireAuth};
-//   });
-  // import { ref, computed } from "vue";
-  // import { defineStore } from "pinia";
-  
-  // export const useAuthStore = defineStore("auth", () => {
-  //   const user = ref(null);
-  
-  //   const loadUser = () => {
-  //     const saveUser = localStorage.getItem("user");
-  //     if (saveUser) {
-  //       user.value = JSON.parse(saveUser);
-  //     }
-  //   };
-  
-  //   const saveUser = () => {
-  //     if (user.value) {
-  //       localStorage.setItem("user", JSON.stringify(user.value));
-  //     }
-  //   };
-  
-  //   loadUser();
-  
-  //   const isLoggedIn = computed(() => !!user.value);
-  
-  //   const login = ({ username, password }) => {
-  //     user.value = { username, password };
-  //     saveUser();
-  //   };
-  
-  //   const register = ({ username, password }) => {
-  //     login({ username, password });
-  //   };
-  
-  //   const logout = () => {
-  //     user.value = null;
-  //     localStorage.removeItem("user");
-  //   };
-  
-  //   return { user, isLoggedIn, login, register, logout };
-  // });
-  
-  import { ref, computed } from 'vue';
+import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
 
-// Fonction pour générer un token aléatoire (simulation, veuillez utiliser un mécanisme sécurisé)
+// Fonction pour générer un token aléatoire (simulation)
 const generateToken = () => {
   return Math.random().toString(36).substring(2) + Date.now().toString(36);
 };
@@ -124,7 +33,7 @@ export const useAuthStore = defineStore('auth', () => {
   const login = ({ username, password }) => {
     // Exécutez l'opération de connexion
     user.value = { username, password };
-    token.value = generateToken(); // Générez un token sécurisé après la connexion
+    token.value = generateToken(); // Génération d'un token sécurisé après la connexion
     loadUser(); // Chargez les données utilisateur après la connexion
   };
 
@@ -149,7 +58,6 @@ export const useAuthStore = defineStore('auth', () => {
       const users = [
         { name: 'John', email: 'john@example.com' },
         { name: 'Alice', email: 'alice@example.com' },
-        // ... Autres utilisateurs ...
       ];
   
       // Vérifie si l'email est déjà utilisé par un utilisateur existant
