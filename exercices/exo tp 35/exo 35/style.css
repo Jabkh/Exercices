@@ -1,0 +1,133 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+header {
+  background-color: #BCAD93;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+.container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0px 35px 0px 35px;
+  & .image {
+      display: flex;
+      align-items: center;
+  }
+
+  & img {
+      width: 110px;
+     
+  }
+  & h1 {
+      font-size: 35px;
+      margin-left: -10px;
+      font-family: Agbalumo;
+      display: inline-block;
+      background: linear-gradient(to left, rgb(255, 208, 0), rgb(133, 121, 244));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+   }
+
+  & ul {
+      display: flex;
+      padding: 10px;
+
+      & li {
+          list-style: none;
+          & a {
+              text-decoration: none;
+              padding: 8px;
+              color: white;
+              margin: 15px;
+              font-size: 18px;
+              transition: transform 0.3s ease;
+          }
+          & a:hover {
+              opacity: 1;
+              transform: scale(1.05);
+          }
+
+         
+      }
+  }}
+ 
+#centre {
+  margin-top: 20px;
+  text-align: center;
+
+  & #labelSearch {
+      display : none;
+  }
+}    
+.search-container {
+  position: relative;
+  }
+
+#inputSearch {
+  margin: auto;
+  width: 30%;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #BCAD93;
+ 
+}
+
+#inputSearch:focus {
+  outline: none;
+  border: 1px solid #a1c6f3;
+ 
+}
+
+#imgSearch {
+  position: absolute;
+  top: 18.5%;
+  right: 550px;
+  transform: translateY(-50%);
+  width: 45px;
+  height: auto;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 40px;
+}
+.card {
+  border: 1px solid rgb(246, 242, 242);
+  border-radius: 10px;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  background-color: rgb(241, 233, 233);
+  display: flex;
+  flex-direction: column;
+  /* transition: transform 0.3s ease; */
+}
+
+.cardEntete {
+  display: flex;
+  height: 200px;
+}
+
+.nom h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  text-align: center;
+  color: #900048
+
+}
+
+.taillePoids {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bas {
+  margin: 20px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 28</title>
+  <script type="module" src="./main.js"></script>
+  <style>
+  * { padding: 5px;}
+  td { text-align: center;}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>eContacts</h1>
+    <fieldset>
+    <form action="#" id="people-form">
+      <div>
+        <label for="firstname">Firstname: </label>
+        <input type="text" id="firstname" name="firstname" required>
+      </div>
+      <div>
+        <label for="lastname">Lastname: </label>
+        <input type="text" id="lastname" name="lastname" required>
+      </div>
+      <div>
+        <label for="birthdate">Birthdate: </label>
+        <input type="date" id="birthdate" name="birthdate" required>
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Prénom</th>
+          <th>Nom</th>
+          <th>Date de naissance</th>
+          <th>#</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-result"></tbody>
+    </table>
+  </fieldset>
+  </main>
+</body>
+</html>

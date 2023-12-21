@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Démo DOM - Modal / data-*</title>
+    <script type="module" src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div style="display: none" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>Modal Title</h1>
+          <button id="modal-btn-close">X</button>
+        </div>
+        <div class="modal-body">
+          <fieldset>
+            <form action="#" id="people-form">
+              <div>
+                <label for="firstname">Firstname: </label>
+                <input type="text" id="firstname" name="firstname" required>
+              </div>
+              <div>
+                <label for="lastname">Lastname: </label>
+                <input type="text" id="lastname" name="lastname" required>
+              </div>
+              <div>
+                <label for="birthDate">Birthdate: </label>
+                <input type="date" id="birthDate" name="birthdate" required>
+              </div>
+              <div>
+                <button>Submit</button>
+              </div>
+            </form>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Prénom</th>
+          <th>Nom</th>
+          <th>Date de naissance</th>
+        </tr>
+      </thead>
+      <tbody id="mon-tbody"></tbody>
+    </table>
+      <hr />
+      <button id="btn-show-modal">Show Modal</button>
+      <ul id="mon-ul"></ul>
+      <hr />
+      <div>
+        <input type="text" id="id-to-del" />
+        <button id="delete-btn">Delete</button>
+      </div>
+  </body>
+</html>
